@@ -1,0 +1,270 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    background-color: #F8D117;
+    color: #0a39ab;
+    padding: 18px;
+    padding-right: 19%;
+    display: flex;
+    font-weight: bold;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#foto {
+    padding-left: 80px;
+}
+
+#auto {
+    margin-left: 50px;
+    color: #0a39ab;
+    padding-left: 80px;
+}
+
+.main {
+    background-color: whitesmoke;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.main h2 {
+    color: #0a39ab;
+    font-family: sans-serif;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.main h3 {
+    color: #0a39ab;
+    font-family: sans-serif;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.toggle{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.main h4 {
+    font: 5px;
+    font-weight: lighter;
+    margin-left: 10px;
+    color: #8d812b;
+    
+    
+}
+
+.main h5 {
+    font: 5px;
+    font-weight: lighter;
+    margin-left: 10px;
+    color: #8d812b;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadrado {
+    background-color: #F8D117;
+    width: 23%;
+    height:83%;
+    text-align: center;
+    border: 1px solid rgba(153,153,153,0.53);
+    box-shadow: 0px 2px 5px 1px rgba(153,153,153,0.53);
+}
+
+.quadrado label {
+    display: block;
+    color: #333;
+    font-size: 14px;
+    
+    margin-bottom: 5px;
+    text-align: left;
+    margin-left: 50px;
+   
+    
+}
+
+.quadrado a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.quadrado input[type=text] {
+   background-color: #f9e867;
+   border-bottom: 3px solid #cab734;
+   border-top: 0;
+   border-left: 0;
+   border-right: 0;
+   outline: none;
+   height: 30px;
+   font-size: 16px;
+   padding: 15px;
+   width: 65%;
+   cursor: pointer;
+   text-align: center;
+}
+
+.quadrado input[type=text]:focus{
+    border-bottom: 3px solid #1194f6;
+
+}
+
+.quadrado input[type=submit] {
+    background-color:#1194f6;
+    margin-left: 15%;
+    width: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 0;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    padding: 15px;
+    cursor: pointer;
+    min-width: 250px;
+    max-width: 100%;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+
+.box {
+    background-color: #1194f6;
+    width: 350px;
+    justify-content: space-around;
+    text-align: center;
+    border-top-left-radius: 15px; 
+    border-top-right-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    cursor: pointer;
+}
+
+.box span {
+    color: white;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    
+    
+}
+
+#f1 {
+    height: 40px;
+    margin-right: 50px;
+}
+
+#f2 {
+    height: 40px;
+    margin-right: 50px;
+}
+
+#f3 {
+    height: 40px;
+}
+
+.toggle {
+    margin-right: 70px;
+}
+
+.toggle {
+    margin-top: 10px;
+}
+
+.toggle {
+    margin-bottom: 10px;
+}
+
+.toggle > input {
+    display: none;
+}
+
+.toggle > label {
+    position: relative;
+    display: block;
+    height: 20px;
+    width: 44px;
+    background: #898989;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.toggle > label:after {
+    position: absolute;
+    left: -2px;
+    top: -3px;
+    display: block;
+    width: 26px;
+    height: 26px;
+    border-radius: 100px;
+    background: #fff;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.05);
+    content: '';
+    transition: all 0.3s ease;
+}
+.toggle > label:active:after {
+    transform: scale(1.15, 0.85);
+}
+.toggle > input:checked ~ label {
+    background: #6fbeb5;
+}
+.toggle > input:checked ~ label:after {
+    left: 20px;
+    background: #179588;
+}
+.toggle > input:disabled ~ label {
+    background: #d5d5d5;
+    pointer-events: none;
+}
+.toggle > input:disabled ~ label:after {
+    background: #bcbdbc;
+}
